@@ -40,22 +40,27 @@ height:370;
 	border: 15px solid lightgray;
 }
 #nav-bar {
-	position: fixed;
+	position: relative;
 	color: white;
-	text-align: right;
-	font-size: 70px;
-	top: 180px;
-	right: 25px;
-	background-color: ;
-	width: 50%
-	
+	background-color: purple;
 	
 	
 }
- li {
+#topright {
+float:right;
+font-size:60px;
+background-color: yellow;
+}
+
+ #topmenu {
+	position: relative;
 	list-style:none;
-	float: left;
+	float: right;
 	padding: 25px;
+	text-align: right;
+	background: green;
+
+
    }
  ul {display: inline-block}
  
@@ -68,10 +73,10 @@ height:370;
 <div class=background>
 <header id=header>
  <nav id=nav-bar>
-	<ul>
-		<li><a class=nav-link href=#about> About </a></li>
-		<li><a class=nav-link href=#services>Services</a></li>
-		<li><a class=nav-link href=#contact>Contact Info</a></li>
+	<ul id=topright>
+		<li id=topmenu><a class=nav-link href=#about> About </a></li>
+		<li id=topmenu><a class=nav-link href=#services>Services</a></li>
+		<li id=topmenu><a class=nav-link href=#contact>Contact Info</a></li>
 		
 	</ul>
 	</nav>
