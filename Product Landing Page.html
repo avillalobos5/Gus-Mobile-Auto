@@ -18,9 +18,11 @@ body {
 	background-color: lightgrey;
 }
 .background {
-background-image: url("https://drive.google.com/uc?export=view&id=1_SqWVQON1iUSPodVfiOtkWI0D0QwkoDd");
+background-image:url("https://drive.google.com/uc?export=view&id=1_SqWVQON1iUSPodVfiOtkWI0D0QwkoDd");
 background-size: cover;
 height: 350px;
+
+position: relative;
 
 
   ;
@@ -31,16 +33,17 @@ color: white;
 }
 
 #header-img {
-position: fixed;
+position:absolute;
 top:0px;
 left:0px;
 width: 350;
 height:370;
 transition: left 5s;
+z-index: 2;
 	}
 
 #circle {
-	position: fixed;
+	position: relative;
     background: white;
     border-radius: 50%;
     width: 300px;
@@ -49,6 +52,7 @@ transition: left 5s;
 	top:12px;
 	border: 15px solid lightgray;
 	transition: left 5s;
+	z-index: 1;
 }
 #nav-bar {
 	position: relative;
@@ -73,10 +77,8 @@ font-size:60px;
 
 
    }
- a: {
-	 color:white;
- }	
-   
+	
+
 
 a:link {
 	color: red;
@@ -134,21 +136,22 @@ a:hover {
 
 
 <div class=background>
-<header id=header>
- <nav id=nav-bar>
-	<ul id=topright>
-		<li id=topmenu><a class=nav-link href=#about> About </a></li>
-		<li id=topmenu><a class=nav-link href=#services>Services</a></li>
-		<li id=topmenu><a class=nav-link href=#contact>Contact Info</a></li>
+	
+	<header id=header>
+ 		<nav id=nav-bar>
+			<ul id=topright>
+				<li id=topmenu><a class=nav-link href=#about> About </a></li>
+				<li id=topmenu><a class=nav-link href=#services>Services</a></li>
+				<li id=topmenu><a class=nav-link href=#contact>Contact Info</a></li>
 		
-	</ul>
-	</nav>
-  <h1>
-	<div id=circle></div>
-  <img id=header-img src="https://drive.google.com/uc?export=view&id=14eE0YJTbXiHip1Xa_KMI4mNPY1XSGv5X">
+			</ul>
+		</nav>
+  		<h1>
+			<div id=circle></div>
+  			<img id=header-img src="https://drive.google.com/uc?export=view&id=14eE0YJTbXiHip1Xa_KMI4mNPY1XSGv5X">
 
-</h1>
-</header>
+		</h1>
+	</header>
 </div>
 <h2 id=about> About </h2>
 <body>
