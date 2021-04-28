@@ -8,11 +8,21 @@
 	
 }
 header:hover #header-img{
-	left: 600px;
+	animation-name: imglogo;
+	animation-duration: 5s;
+}
+@keyframes imglogo {
+	100% {
+		left:600px;
+		transform: rotate(360deg);
+	}
+
+
 }
 header:hover #circle{
 	left: 606px;
-	opacity: .8;
+	opacity: 1;
+	box-shadow:	0 0 0 17px lightgrey inset, 0 0 0 50px white inset, 0 0 0 200px rgb(251, 255, 5) inset;
 }
 body {
 	background-color: lightgrey;
@@ -38,21 +48,21 @@ top:0px;
 left:0px;
 width: 350;
 height:370;
-transition: left 5s;
 z-index: 2;
 	}
 
 #circle {
 	position: relative;
-    background: white;
     border-radius: 50%;
     width: 300px;
     height: 320px;
 	left:10px;
 	top:12px;
-	border: 15px solid lightgray;
+	border: 15px solid grey;
 	transition: left 5s;
 	z-index: 1;
+	box-shadow:	0 0 0 17px lightgrey inset, 0 0 0 50px white inset, 0 0 0 200px white inset;
+	o
 }
 #nav-bar {
 	position: relative;
@@ -89,6 +99,7 @@ a:visited {
 a:hover {
 	color:yellow;
 	font-size: 80px;
+	outline: 20px red;
 }
  ul {display: inline-block}
  
