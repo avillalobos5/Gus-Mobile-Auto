@@ -32,8 +32,8 @@ header:hover #circle{
 	
 	
 	100% {
-		transform: translate3d(606px, 0px , 0px);
-		box-shadow:	0 0 0 17px lightgrey inset, 0 0 0 50px white inset, 0 0 0 200px rgb(42, 230, 243) inset;
+		transform: translate3d(600px, 0px , 0px) rotate(360deg);
+		/*box-shadow:	0 0 0 17px lightgrey inset, 0 0 0 50px white inset, 0 0 0 200px rgb(42, 230, 243) inset;*/
 	}
 }
 body {
@@ -66,21 +66,23 @@ color: white;
 #circle {
 	position: absolute;
     border-radius: 50%;
-	top: 37px;
+	top: 42px;
 	left: 45px;
-    width: 257px;
-    height: 267px;
-	border: 0px solid grey;
+    width: 260px;
+    height: 260px;
+	border: 0px solid gray;
 	transition: left 5s;
 	z-index: 1;
-	background-color: white;
-	box-shadow: 0 0 0 25px grey;
+	background-color: lightgrey;
+	box-shadow: 0 0 0 30px lightgrey;
 
 }
 	/*box-shadow:	0 0 0 17px lightgrey inset, 0 0 0 50px white inset, 0 0 0 200px white inset;
 	*/
 
-
+#Gusmobile {
+	text-align: center;
+}
 #nav-bar {
 	color: white;
 	background-color: purple;
@@ -178,7 +180,9 @@ a:hover {
 			</div>
 		</nav>
   		<h1>
-			<div id=circle></div>
+			<div id=circle>
+				<div id=Gusmobile>Gus Mobile</div>
+			</div>
   			<!--	<img id=header-img src="https://drive.google.com/uc?export=view&id=14eE0YJTbXiHip1Xa_KMI4mNPY1XSGv5X">-->
 				<img id=header-img src="https://drive.google.com/uc?export=view&id=1q5pc2Jdi4SOZv7OCGrf2EF05K_DF4VPl">
 			
