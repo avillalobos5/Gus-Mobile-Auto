@@ -100,7 +100,8 @@ color: white;
 }
 #house {
 	position:relative;
-	display:inline-block;	
+	display:inline-block;
+	right: 25px;	
 	
 	
 }
@@ -126,7 +127,8 @@ color: white;
 }
 #car {
 	position: relative;
-	display: inline-block
+	display: inline-block;
+	right: 25px;
 }
 
 #topcarleft {
@@ -134,9 +136,9 @@ color: white;
 	border-top: 5px solid black;
 	width:10px;
 	height:0px;
-	transform: rotate(-30deg);
-	left: 150px;
-	bottom: 20px
+	transform: rotate(-40deg);
+	left: 141px;
+	bottom: 9px
 }	
 
 #topcarright {
@@ -144,17 +146,46 @@ color: white;
 	border-top: 5px solid black;
 	width:10px;
 	height:0px;
-	transform: rotate(30deg);
-	left: 180px;
-	bottom: 20px
+	transform: rotate(40deg);
+	left: 170px;
+	bottom: 9px
 }	
-	
-	
 
-
-	
-	
+#topcarmid {
+	position: absolute;
+	border-top: 5px solid black;
+	width: 25px;
+	height:0px;
+	left: 148px;
+	bottom: 12px;
 }
+
+#botcarleft {
+	position:absolute;
+	border-top: 5px solid black;
+	border-left: 5px solid black;
+	width: 9px;
+	height: 10px;
+	left: 129px;
+	top: -10;
+}
+
+#botcarright {
+	position:absolute;
+	border-top: 5px solid black;
+	border-right: 5px solid black;
+	width: 9px;
+	height: 10px;
+	left: 178px;
+	top: -10;
+}
+	
+	
+
+
+	
+	
+
 #nav-bar {
 	color: white;
 	background-color: purple;
@@ -264,6 +295,8 @@ a:hover {
 					<div id=topcarleft></div>
 					<div id=topcarmid></div>
 					<div id=topcarright></div>
+					<div id=botcarleft></div>
+					<div id=botcarright></div>
 				</div>
 			</div>
   			<!--	<img id=header-img src="https://drive.google.com/uc?export=view&id=14eE0YJTbXiHip1Xa_KMI4mNPY1XSGv5X">-->
