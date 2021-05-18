@@ -1,281 +1,291 @@
 <DOCTYPE html>
 <html>
-	#header {
-		position: relative;
-		top: 0;
-		background-color: none;
-		
-	}
-	header:hover #header-img{
-		animation: imglogo 5s forwards;
-	}		
-	
-	
-	@keyframes imglogo {
-		100% {
-			transform: translate3d(600px, 0px, 0px) rotate(360deg);
-			}
-	
-		
-	
-	
-	
-	}
-	header:hover #circle{
-		animation: roll 5s forwards;
-		
-		opacity: 1;
-		
-	}
-	@keyframes roll {
-		
-		
-		100% {
-			transform: translate3d(600px, 0px , 0px);
-			/*box-shadow:	0 0 0 17px lightgrey inset, 0 0 0 50px white inset, 0 0 0 200px rgb(42, 230, 243) inset;*/
-		}
-	}
-	body {
-		background-color: lightgrey;
-	}
-	
-	.background {
-	background-image:url("https://drive.google.com/uc?export=view&id=1_SqWVQON1iUSPodVfiOtkWI0D0QwkoDd");
-	background-size: cover;
-	height: 350px;
-	
+	<style>
+#header {
 	position: relative;
+	top: 0;
+	background-color: none;
 	
-	
-	  ;
-	}
-	
-	h1{
-	color: white;
-	}
-	
-	#header-img {
-		position: absolute;
-		top:0px;
-		left: 0px;
-		height: 350px;
-		width: 350px;
-		z-index: 2;
+}
+header:hover #header-img{
+	animation: imglogo 5s forwards;
+}		
+
+
+@keyframes imglogo {
+	100% {
+		transform: translate3d(600px, 0px, 0px) rotate(360deg);
 		}
+
 	
-	#circle {
-		position: absolute;
-		border-radius: 50%;
-		top: 42px;
-		left: 45px;
-		width: 260px;
-		height: 260px;
-		border: 0px solid gray;
-		transition: left 5s;
-		z-index: 1;
-		background-color: lightgrey;
-		box-shadow: 0 0 0 30px lightgrey;
-		
-	}
-		/*box-shadow:	0 0 0 17px lightgrey inset, 0 0 0 50px white inset, 0 0 0 200px white inset;
-		*/
-	
-	#Gusmobile {
-		text-align: center;
-		color: black;
-		padding: 35px;
-	}
-	#housebot {
-		position:absolute;
-		border-bottom: 5px solid black;
-		border-left: 5px solid black;
-		width: 20px;
-		height:30px;
-		margin-left: auto;
-		margin-right: auto;
-		left: 110px;
-		top:-30px;
-		
-		
-	}
-	#house {
-		position:relative;
-		display:inline-block;
-		right: 25px;	
-		
-		
-	}
-	#housetopleft {
-		position: absolute;
-		border-top: 5px solid black;
-		width: 40px;
-		height: 0px;
-		transform: rotate(-30deg);
-		left: 100px;
-		bottom:30px;
-		
-	
-	}
-	#housetopright {
-		position: absolute;
-		border-top: 5px solid black;
-		width: 40px;
-		height: 0px;
-		transform: rotate(30deg);
-		left: 132px;
-		bottom:30px;
-	}
-	#car {
-		position: relative;
-		display: inline-block;
-		right: 25px;
-	}
-	
-	#topcarleft {
-		position: absolute;
-		border-top: 5px solid black;
-		width:10px;
-		height:0px;
-		transform: rotate(-40deg);
-		left: 141px;
-		bottom: 9px
-	}	
-	
-	#topcarright {
-		position: absolute;
-		border-top: 5px solid black;
-		width:10px;
-		height:0px;
-		transform: rotate(40deg);
-		left: 170px;
-		bottom: 9px
-	}	
-	
-	#topcarmid {
-		position: absolute;
-		border-top: 5px solid black;
-		width: 25px;
-		height:0px;
-		left: 148px;
-		bottom: 12px;
-	}
-	
-	#botcarleft {
-		position:absolute;
-		border-top: 5px solid black;
-		border-left: 5px solid black;
-		width: 9px;
-		height: 10px;
-		left: 129px;
-		top: -10px;
-	}
-	
-	#botcarright {
-		position:absolute;
-		border-top: 5px solid black;
-		border-right: 5px solid black;
-		width: 9px;
-		height: 10px;
-		left: 178px;
-		top: -10px;
-	}
-		
-		
-	
-	
-		
-		
-	
-	#nav-bar {
-		color: white;
-		background-color: none;
-	  
-		
-		
-	}
-	#topright {
-	float:right;
-	font-size:60px;
-	background-color:none;
-	width: 50%;
-	background: none;
-	
-	}
-	
-	 #topmenu {
-		
-		list-style:none;
-		float: right;
-		padding:20px;
-		
-		
-	
-	
-	   }
-		
-	
-	
-	a:link {
-		color: red;
-	}
-	a:visited {
-		color:white;
-	}
-	a:hover {
-		color:yellow;
-		font-size: 80px;
-		outline: 20px red;
-	}
-	 ul {display: inline-block}
-	 
-	 #nav-div {
-		background-color: green;
-	 }
-	
-	#videobox {
-	  text-align: center;
-	  left-margin: auto;
-	  right-margin: auto;
-	  border-top: 20px solid grey;
-	}
-	#about{
-		text-align: center;
-		color: white;
-		background-color:black;
-		font-size: 43px;
-	}
-	#aboutpara {
-		text-align: center;
-		padding: 60px;
-		border: 20px red solid;
-		width: 500px;
-		border-radius: 50%;
-		margin-left:auto;
-		margin-right:auto;
-	}
-	#services {
-		color: black;
-		font-size: 43px;
-		text-align: center;
-	}
-	#servlist {
-		display:block;
-		padding: 60px;
-		border: 25px green solid;
-		width: 500px;
-		margin-left: auto;
-		margin-right: auto;
-	}
-	#form {
-	  text-align: center;
-	}
-	#contact {
-		color: black;
-		text-align: center;
-		border: 50px black solid;
-	}
 
 
+
+}
+header:hover #circle{
+	animation: roll 5s forwards;
+	
+	opacity: 1;
+	
+}
+@keyframes roll {
+	
+	
+	100% {
+		transform: translate3d(600px, 0px , 0px);
+		/*box-shadow:	0 0 0 17px lightgrey inset, 0 0 0 50px white inset, 0 0 0 200px rgb(42, 230, 243) inset;*/
+	}
+}
+body {
+	background-color: lightgrey;
+}
+
+.background {
+background-image:url("https://drive.google.com/uc?export=view&id=1_SqWVQON1iUSPodVfiOtkWI0D0QwkoDd");
+background-size: cover;
+height: 350px;
+
+position: relative;
+
+
+  ;
+}
+
+h1{
+color: white;
+}
+
+#header-img {
+	position: absolute;
+	top:0px;
+	left: 0px;
+	height: 350px;
+	width: 350px;
+	z-index: 2;
+	}
+
+#circle {
+	position: absolute;
+    border-radius: 50%;
+	top: 42px;
+	left: 45px;
+    width: 260px;
+    height: 260px;
+	border: 0px solid gray;
+	transition: left 5s;
+	z-index: 1;
+	background-color: lightgrey;
+	box-shadow: 0 0 0 30px lightgrey;
+	
+}
+	/*box-shadow:	0 0 0 17px lightgrey inset, 0 0 0 50px white inset, 0 0 0 200px white inset;
+	*/
+
+#Gusmobile {
+	text-align: center;
+	color: black;
+	padding: 35px;
+}
+#housebot {
+	position:absolute;
+	border-bottom: 5px solid black;
+	border-left: 5px solid black;
+	width: 20px;
+	height:30px;
+	margin-left: auto;
+	margin-right: auto;
+	left: 110px;
+	top:-30px;
+	
+	
+}
+#house {
+	position:relative;
+	display:inline-block;
+	right: 25px;	
+	
+	
+}
+#housetopleft {
+	position: absolute;
+	border-top: 5px solid black;
+	width: 40px;
+	height: 0px;
+	transform: rotate(-30deg);
+	left: 100px;
+	bottom:30px;
+	
+
+}
+#housetopright {
+	position: absolute;
+	border-top: 5px solid black;
+	width: 40px;
+	height: 0px;
+	transform: rotate(30deg);
+	left: 132px;
+	bottom:30px;
+}
+#car {
+	position: relative;
+	display: inline-block;
+	right: 25px;
+}
+
+#topcarleft {
+	position: absolute;
+	border-top: 5px solid black;
+	width:10px;
+	height:0px;
+	transform: rotate(-40deg);
+	left: 141px;
+	bottom: 9px
+}	
+
+#topcarright {
+	position: absolute;
+	border-top: 5px solid black;
+	width:10px;
+	height:0px;
+	transform: rotate(40deg);
+	left: 170px;
+	bottom: 9px
+}	
+
+#topcarmid {
+	position: absolute;
+	border-top: 5px solid black;
+	width: 25px;
+	height:0px;
+	left: 148px;
+	bottom: 12px;
+}
+
+#botcarleft {
+	position:absolute;
+	border-top: 5px solid black;
+	border-left: 5px solid black;
+	width: 9px;
+	height: 10px;
+	left: 129px;
+	top: -10px;
+}
+
+#botcarright {
+	position:absolute;
+	border-top: 5px solid black;
+	border-right: 5px solid black;
+	width: 9px;
+	height: 10px;
+	left: 178px;
+	top: -10px;
+}
+	
+	
+
+
+	
+	
+
+#nav-bar {
+	color: white;
+	background-color: purple;
+  position: fixed;
+  top: 0;
+  float: right;
+  margin-left: 50%;
+  width: 50%;
+  height: 10%;
+  
+	
+	
+}
+#topright {
+font-size:60px;
+background-color:none;
+width: 50%;
+height:50%;
+background: none;
+position: relative;
+background-color: green;
+
+}
+
+ #topmenu {
+	
+	list-style: none;
+	padding:20px;
+  background-color: blue;
+  
+	
+	
+
+
+   }
+	
+
+
+a:link {
+	color: red;
+}
+a:visited {
+	color:white;
+}
+a:hover {
+	color:yellow;
+	font-size: 80px;
+	outline: 20px red;
+}
+ ul {display: inline-block}
+ 
+ #nav-div {
+	background-color: green;
+ }
+
+#videobox {
+  text-align: center;
+  left-margin: auto;
+  right-margin: auto;
+  border-top: 20px solid grey;
+}
+#about{
+	text-align: center;
+	color: white;
+	background-color:black;
+	font-size: 43px;
+}
+#aboutpara {
+	text-align: center;
+	padding: 60px;
+	border: 20px red solid;
+	width: 500px;
+	border-radius: 50%;
+	margin-left:auto;
+	margin-right:auto;
+}
+#services {
+	color: black;
+	font-size: 43px;
+	text-align: center;
+}
+#servlist {
+	display:block;
+	padding: 60px;
+	border: 25px green solid;
+	width: 500px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#form {
+  text-align: center;
+}
+#contact {
+	color: black;
+	text-align: center;
+	border: 50px black solid;
+}
+
+</style>
 
 
 
