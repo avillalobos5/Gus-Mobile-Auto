@@ -231,7 +231,7 @@ a:link {
 a:visited {
 	color:white;
 }
-a:hover {
+#topmenu a:hover {
 	color:yellow;
 	font-size: 80px;
 	outline: 20px red;
@@ -294,11 +294,15 @@ a:hover {
 .flex {
   display: flex;
   justify-content:center;
+  padding: 20px;
 }
 .flex a:hover {
-	background-color:green;
+	background-color:black !important;
   border: 10px solid purple;
+  font-size: 1.5rem;
 }
+
+
 #face {
   background-color: lightblue;
   padding: 20px;
@@ -402,10 +406,13 @@ All my work is completely mobile. With the proper precautions taken through this
 	Email: Gusmobileauto@gmail.com
 </p>
   </h2>  
-  <footer class=flex>
-    <div id=face><a href="https://www.facebook.com/GusMobileAuto">Facebook</a></div>
-    <div id=insta><a href="https://www.instagram.com/gusmobileautollc/">Instagram</a></div>
-  </footer>  		
+  <div class=flex>
+    <div><a id=face href="https://www.facebook.com/GusMobileAuto" target=_blank>Facebook</a></div>
+    <div><a id=insta href="https://www.instagram.com/gusmobileautollc/" target=_blank>Instagram</a></div>
+  </div>  
+  <footer>
+    <p>End</p>
+  </footer>
 	
 
 
